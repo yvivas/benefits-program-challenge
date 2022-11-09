@@ -1,3 +1,11 @@
+/*
+ *  Product
+ *  1.0
+ *  11/8/22, 8:30 PM
+ *  Copyright (c) 2022 Unosquare
+ *  Any illegal reproduction of this content will result in immediate legal action.
+ */
+
 package coe.unosquare.benefits.product;
 
 /**
@@ -5,11 +13,11 @@ package coe.unosquare.benefits.product;
  */
 public class Product {
     /** The Product name. **/
-    private String name;
+    private String productName;
     /** The Product price. **/
-    private Double price;
+    private Double productPrice;
     /** The Product type defined by: 1 = Basic need, 2 =  Work tool, 3 = Luxury.  **/
-    private Integer type;
+    private Integer productType;
 
     /**
      * Instantiates a new Product.
@@ -19,9 +27,9 @@ public class Product {
      * @param type  the type
      */
     public Product(final String name, final Double price, final Integer type) {
-        this.name = name;
-        this.price = price;
-        this.type = type;
+        productName = name;
+        productPrice = price;
+        productType = type;
     }
 
     /**
@@ -30,7 +38,7 @@ public class Product {
      * @return the name
      */
     public String getName() {
-        return name;
+        return productName;
     }
 
     /**
@@ -39,7 +47,7 @@ public class Product {
      * @param name the name
      */
     public void setName(final String name) {
-        this.name = name;
+        productName = name;
     }
 
     /**
@@ -48,7 +56,7 @@ public class Product {
      * @return the price
      */
     public Double getPrice() {
-        return price;
+        return productPrice;
     }
 
     /**
@@ -57,7 +65,7 @@ public class Product {
      * @param price the price
      */
     public void setPrice(final Double price) {
-        this.price = price;
+        productPrice = price;
     }
 
     /**
@@ -66,7 +74,7 @@ public class Product {
      * @return the type
      */
     public Integer getType() {
-        return type;
+        return productType;
     }
 
     /**
@@ -75,14 +83,14 @@ public class Product {
      * @param type the type
      */
     public void setType(final Integer type) {
-        this.type = type;
+        productType = type;
     }
 
     @Override
     public String toString() {
         return "Product{"
-                + "name='" + name + '\''
-                + ", price=" + price
-                + ", type=" + type + '}';
+                + "name='" + productName + '\''
+                + ", price=" + productPrice
+                + ", type=" + productType + '}';
     }
 }

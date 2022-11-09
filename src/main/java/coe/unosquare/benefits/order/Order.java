@@ -1,3 +1,11 @@
+/*
+ *  Order
+ *  1.0
+ *  11/8/22, 8:28 PM
+ *  Copyright (c) 2022 Unosquare
+ *  Any illegal reproduction of this content will result in immediate legal action.
+ */
+
 package coe.unosquare.benefits.order;
 
 import coe.unosquare.benefits.product.Product;
@@ -13,10 +21,10 @@ public class Order {
     /**
      * Instantiates a new Order.
      *
-     * @param products the products
+     * @param productsMap the list of products added to the order
      */
-    public Order(final Map<Product, Integer> products) {
-        this.products = products;
+    public Order(final Map<Product, Integer> productsMap) {
+        products = productsMap;
     }
 
     /**

@@ -1,8 +1,15 @@
+/*
+ *  PayOrderSimulator
+ *  1.0
+ *  11/8/22, 8:29 PM
+ *  Copyright (c) 2022 Unosquare
+ *  Any illegal reproduction of this content will result in immediate legal action.
+ */
+
 package coe.unosquare.benefits.util;
 
 import coe.unosquare.benefits.order.Order;
 import coe.unosquare.benefits.product.Product;
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Map;
