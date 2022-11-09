@@ -13,6 +13,7 @@ an 8% discount is applied no matter the amount.
 🏁 Your job for this challenge is to make a refactor of the code already done to process the discounts conditions described above.
 The goal is to reduce complexity and make it more SOLID. 
 - ❗Feel free to apply any patterns you consider might fit. 
-- ❗Make any changes you consider will also improve performance and
-please 
-- ❗ make sure to add the missing tests for Mastercard pay scenarios.
+- ❗Make any changes you consider will also improve performance. 
+- ❗Incorporate exception handling with at least one custom exception.
+- ❗Refactor to allow creation of small testable units.
+- ❗Write a simple Javadoc with essential information for one or more of the newly created methods or classes.
