@@ -39,4 +39,29 @@ class OrderTest {
         Map<Product, Integer> products = ProductGenerator.generateProducts(5);
         assertEquals(0.05, payOrder(products, "Visa"));
     }
+
+    @Test
+    void orderWithMasterCardOrderMore100Test() {
+        Map<Product, Integer> products = ProductGenerator.generateProductsbyAmmount(100.00);
+        assertEquals(0.17, payOrder(products, "Mastercard"));
+    }
+
+    @Test
+    void orderWithMasterCardOrderMore75Test() {
+        Map<Product, Integer> products = ProductGenerator.generateProductsbyAmmount(75.00);
+        assertEquals(0.12, payOrder(products, "Mastercard"));
+    }
+
+    @Test
+    void orderWithMasterCardOrderMore50Test() {
+        Map<Product, Integer> products = ProductGenerator.generateProductsbyAmmount(50.00);
+        assertEquals(0.08, payOrder(products, "Mastercard"));
+    }
+
+    @Test
+    void orderWithoutKnowFranchiseTest() {
+        Map<Product, Integer> products = ProductGenerator.generateProductsbyAmmount(50.00);
+        assertEquals(0.0, payOrder(products, "American Express"));
+    }
+
 }
