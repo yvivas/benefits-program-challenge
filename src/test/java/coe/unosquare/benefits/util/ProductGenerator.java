@@ -46,6 +46,13 @@ public final class ProductGenerator {
         return products;
     }
 
+    /**
+     * Generate products map.
+     *
+     * @param expectedPrice the expected price of the sum(order)
+     *
+     * @return the map
+     */
     public static Map<Product, Integer> generateProductsbyAmmount(final Double expectedPrice) {
         HashMap<Product, Integer> products = new HashMap<>();
         int maxValue = 100;
